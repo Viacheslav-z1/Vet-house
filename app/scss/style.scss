@@ -7,7 +7,89 @@
 
 
 
+.header {}
 
+.header__top-info {
+    background-color: $bg;
+    padding: 19px 0;
+    @extend %roboto-400;
+    font-size: 18px;
+    line-height: 130%;
+}
+
+.container {}
+
+.header__top-info-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.header__top-info-list-item {
+    display: flex;
+    align-items: center;
+}
+
+.header__top-info-viber-support {
+    margin-right: 5px;
+}
+
+.header__top-info-img-support{
+    margin-right: 15px;
+}
+
+.header__top-info-numbers-list {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header__top-info-numbers-list-item {}
+
+.header__top-info-numbers-list-link {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-weight: 700;
+}
+
+.header__top-info-list-item--location {}
+
+.header__top-info-list-location {}
+
+.header__top-info-list-item-address {
+    font-family: 'Roboto-Regular' !important;
+    font-style: normal;
+    span{
+        font-weight: 700;
+    }
+}
+
+.header__top-info-list-work-time{
+    margin-right: 5px;
+}
+.header__top-info-list-item--work-time {}
+
+.header__top-info-list-work-time {}
+
+.header__top-info-list-item-work-text {
+    span{
+        font-weight: 700;
+    }
+}
+
+.header__top-info-list-item--profile {}
+
+.header__top-info-list-item-profile-link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #fff;
+    span{
+       border-bottom: 1px solid #fff;
+    }
+}
 
 
 
