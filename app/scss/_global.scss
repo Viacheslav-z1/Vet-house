@@ -4,7 +4,11 @@
     margin: 0 auto;
 }
 
-.title-text {
+body{
+    background-color: #F8F9FD;
+}
+
+.subtitle {
     border-radius: 5px;
     background: #FFF;
     box-shadow: 0px 4px 12px 0px rgba(142, 162, 170, 0.20);
@@ -15,9 +19,10 @@
     font-size: 24px;
     @extend %rubik-700;
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
-.help__text-wrapper{
+.subtitle-wrapper{
     min-width: 100px;
     text-align: center;
 }
@@ -30,7 +35,14 @@
     text-transform: uppercase;
     margin-bottom: 50px;
 }
-// .f{
-//     @extend %rubik-800;
 
-// }
+body::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: #F0F3FA;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #008BD2;
+    border-radius: 5px;
+}
