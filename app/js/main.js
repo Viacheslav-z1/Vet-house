@@ -1,6 +1,51 @@
 
 
 
+const menuBtn = document.querySelector('.menu__btn__open-js');
+const menu = document.querySelector('.header__menu-js');
+
+menuBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  if (menu.classList.contains('open')) {
+    menu.classList.remove('open');
+  } else {
+    menu.classList.add('open');
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const swiper = new Swiper('#swiper1', {
   // Optional parameters
   direction: 'horizontal',
@@ -38,6 +83,9 @@ swiperPrev.addEventListener('click', () => {
 swiperNext.addEventListener('click', () => {
   swiper2.slideNext();
 })
+
+
+
 
 
 
