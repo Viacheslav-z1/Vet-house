@@ -3,17 +3,22 @@
 
 const menuBtn = document.querySelector('.menu__btn__open-js');
 const menu = document.querySelector('.header__menu-js');
-
-menuBtn.addEventListener('click', (e) => {
-  e.preventDefault();
-  if (menu.classList.contains('open')) {
-    menu.classList.remove('open');
-  } else {
-    menu.classList.add('open');
-  }
-});
+const menuBtn2 = document.querySelector('#menu__btn2');
 
 
+
+toggleMenu(menuBtn);
+toggleMenu(menuBtn2);
+function toggleMenu(openButton){
+  openButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (menu.classList.contains('open')) {
+      menu.classList.remove('open');
+    } else {
+      menu.classList.add('open');
+    }
+  });
+}
 
 
 
@@ -49,7 +54,7 @@ menuBtn.addEventListener('click', (e) => {
 const swiper = new Swiper('#swiper1', {
   // Optional parameters
   direction: 'horizontal',
-  slidesPerView: 4,
+  slidesPerView: 'auto',
   grid: {
     rows: 2,
   },
@@ -58,6 +63,22 @@ const swiper = new Swiper('#swiper1', {
     prevEl: null, // Отключение кнопки "Предыдущий слайд"
   },
   spaceBetween: 30,
+
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      grid: {
+        rows: 1,
+      },
+      spaceBetween: 10,
+    },
+
+    1250: {
+      grid: {
+        rows: 2,
+      },
+    },
+}
 });
 
 

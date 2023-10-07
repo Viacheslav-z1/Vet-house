@@ -1,0 +1,166 @@
+@import 'vars';
+
+@media(max-width:1620px){
+    .menu{
+        &__list{
+            gap: 25px;
+        }
+    }
+}
+
+
+
+@media(max-width:1420px){
+    .menu{
+        &__list{
+            gap: 15px;
+        }
+    }
+    .header{
+        &__links-btn{
+            padding: 15px;
+        }
+    }
+}
+
+
+
+@media(max-width:1320px){
+    .menu{
+        &__list{
+            display: none;
+        }
+        &__btn-two{
+            display: flex;
+            cursor: pointer;
+        }
+    }
+    .btn__wrapper{
+        display: none;
+    }
+
+}
+
+
+
+@media(max-width:1250px){
+  .header__top-info{
+    display: none;
+  }
+  .header__menu-js{
+    top: 100px;
+  }
+
+
+  .header__menu__inner{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+  }
+
+  .header__menu-js{
+    height: calc(100vh - 90px);
+    padding: 30px 0;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+        background-color: #F0F3FA;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background: #008BD2;
+        border-radius: 3px;
+    }
+
+  }
+
+  .swiper{
+    height: auto;
+  }
+}
+
+
+
+
+@media(max-width:950px){
+    .header__menu__inner{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+      }
+
+      .top__social-list{
+        display: none;
+      }
+      .top__text{
+        text-align: center;
+      }
+      .top__inner{
+        justify-content: center;
+      }
+      .top__descr{
+        text-align: center;
+      }
+      .top__left-wrapper{
+        text-align: center;
+      }
+      .top__btn-wrapper{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .help{
+        padding: 50px 0;
+      }
+  }
+
+
+  @media(max-width:650px){
+    .header__menu__inner{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        
+      }
+      .header__margin-media{
+        margin-top: -10px;
+      }
+      .header__phone-media{
+        display: inline;
+        margin-right: 10px;
+      }
+      .header__mail-media{
+        display: block;
+        margin-top: 10px;
+      }
+
+      .top__text{
+        font-size: 30px;
+      }
+      .top__descr{
+        font-size: 16px;
+        margin-bottom: 30px;
+      }
+      .top{
+        padding: 100px 0;
+        padding-top: 190px;
+      }
+  }
+
+
+  @media(max-width:430px){
+    .header__margin-media{
+       display: block;
+      }
+      .header__phone-media{
+        display: block;
+      }
+  }
+
+
+@media(max-width:400px){
+    .header__logo{
+        max-width: 180px;
+    }
+  }
