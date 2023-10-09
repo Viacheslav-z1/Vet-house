@@ -86,8 +86,8 @@ const swiper = new Swiper('#swiper1', {
 const swiper2 = new Swiper('#swiper2', {
   // Optional parameters
   direction: 'horizontal',
-  slidesPerView: 4,
-  spaceBetween: 30,
+  slidesPerView:  'auto',
+  spaceBetween: 10,
   nextEl: '.swiper-button-next', // Селектор для кнопки "Следующий слайд"
   prevEl: '.swiper-button-prev', // Селектор для кнопки "Предыдущий слайд"
 
