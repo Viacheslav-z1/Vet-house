@@ -1,56 +1,5 @@
 
 
-
-const menuBtn = document.querySelector('.menu__btn__open-js');
-const menu = document.querySelector('.header__menu-js');
-const menuBtn2 = document.querySelector('#menu__btn2');
-
-
-
-toggleMenu(menuBtn);
-toggleMenu(menuBtn2);
-function toggleMenu(openButton){
-  openButton.addEventListener('click', (e) => {
-    e.preventDefault();
-    if (menu.classList.contains('open')) {
-      menu.classList.remove('open');
-    } else {
-      menu.classList.add('open');
-    }
-  });
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const swiper = new Swiper('#swiper1', {
   // Optional parameters
   direction: 'horizontal',
@@ -78,7 +27,7 @@ const swiper = new Swiper('#swiper1', {
         rows: 2,
       },
     },
-}
+  }
 });
 
 
@@ -86,7 +35,7 @@ const swiper = new Swiper('#swiper1', {
 const swiper2 = new Swiper('#swiper2', {
   // Optional parameters
   direction: 'horizontal',
-  slidesPerView:  'auto',
+  slidesPerView: 'auto',
   spaceBetween: 10,
   nextEl: '.swiper-button-next', // Селектор для кнопки "Следующий слайд"
   prevEl: '.swiper-button-prev', // Селектор для кнопки "Предыдущий слайд"
@@ -104,6 +53,33 @@ swiperPrev.addEventListener('click', () => {
 swiperNext.addEventListener('click', () => {
   swiper2.slideNext();
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

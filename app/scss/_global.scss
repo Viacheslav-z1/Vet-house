@@ -8,6 +8,24 @@ body{
     background-color: #F8F9FD;
 }
 
+.block{
+    display: block !important;
+}
+.none{
+    display: none !important;
+}
+
+.main-padding{
+    padding-top: 190px;
+}
+
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+
 .subtitle {
     border-radius: 5px;
     background: #FFF;
@@ -46,6 +64,54 @@ body::-webkit-scrollbar-thumb {
     background: #008BD2;
     border-radius: 5px;
 }
+
+
+
+.breadcrumbs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 0;
+    &__list {
+       display: flex;
+       align-items: center;
+       gap: 15px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    &__link {
+        @extend %roboto-400 ;
+        font-size: 18px;
+        color: #303030;
+    }
+
+    &__prev {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__text {
+        @extend %roboto-400 ;
+        font-size: 18px;
+        color: #303030;
+    }
+}
+
+
+
+
+
+
+
+
+
 
 
 
