@@ -6,6 +6,7 @@ const tabsContentItems = document.querySelectorAll('.tabs__item-js'),
   tabsButtons = document.querySelectorAll('.tabs__btn-js')
 lastBreadcrumb = document.querySelector('.breadcrumbs__end-js');
 
+
 initialTabs();
 
 function initialTabs() {

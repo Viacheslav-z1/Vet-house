@@ -25,6 +25,9 @@ function styles() {
 function scripts() {
   return src([
     'node_modules/swiper/swiper-bundle.min.js',
+    'node_modules/fslightbox/index.js',
+    'node_modules/isotope-layout/dist/isotope.pkgd.min.js',
+    
     'app/js/main.js'
   ])
   .pipe(concat('main.min.js'))
@@ -70,7 +73,8 @@ function build() {
   return src([
     'app/**/*.html',
     'app/css/style.min.css',
-    'app/js/main.min.js'
+    'app/js/main.min.js',
+    'app/js/*.js',
   ],{base: 'app'})
   .pipe(dest('dist'))
 }

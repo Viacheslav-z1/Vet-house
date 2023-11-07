@@ -6,7 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  
   "author": "Zalotnyi Viacheslav",
   "license": "ISC",
   "devDependencies": {
@@ -22,6 +21,8 @@
   },
   "dependencies": {
     "del": "^6.0.0",
+    "fslightbox": "^3.4.1",
+    "isotope-layout": "^3.0.6",
     "swiper": "^10.2.0"
   }
 }

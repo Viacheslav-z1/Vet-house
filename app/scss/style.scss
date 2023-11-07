@@ -1097,6 +1097,7 @@
     &__container {
         padding: 65px 0 130px;
         display: flex;
+        justify-content: space-between;
     }
 
     &__wrapper-title {
@@ -1109,6 +1110,30 @@
         max-width: 1320px;
         width: 100%;
         flex-grow: 1;
+    }
+
+    &__galery__link{
+        text-decoration: none;
+
+    }
+    
+    &__galery-img{
+        object-fit: cover;
+        max-width: 420px;
+        margin-bottom: 15px;
+    }
+
+    &__galery__title{
+        @extend %rubik-700;
+        color: #303030;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+
+    &__galery__inner{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 30px;
     }
 
     &__jobs-list {
@@ -1171,9 +1196,8 @@
     &__acide {
         padding-left: 30px;
         padding-top: 160px;
-        flex-grow: 1;
-        max-width: 420px;
-
+        width: 440px;
+       
     }
 
     &__buttons {
@@ -1213,6 +1237,87 @@
 
     &__text {}
 }
+
+.contacts__numbers{
+
+    address{
+        color: #303030;
+        font-size: 24px;
+        @extend %rubik-700;
+        font-style: normal;
+    }
+}
+
+.partners {
+    padding: 20px 0 130px 0;
+
+    &__item-text{
+        font-size: 24px;
+        @extend %rubik-700;
+        color: #fff;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+
+    &__breadcrumbs{
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        text-align-last: left;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        align-items: center;
+
+    }
+
+    &__item {
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 20px;
+
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        transition: all .5s;
+        max-width: 570px;
+        &:hover{
+            transform: scale(1.01);
+        }
+    }
+
+    &__link {
+        background-color: #008BD2;
+        padding: 18px 25px;
+        width: 340px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__button {
+    }
+
+    &__text-wrapper{
+        text-align-last: left;
+    }
+    &__button__text{
+        text-transform: uppercase;
+        font-size: 18px;
+        @extend %rubik-700;
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
 
 
 
