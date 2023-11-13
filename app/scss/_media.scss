@@ -19,6 +19,30 @@
 
     }
   }
+
+  .stats {
+
+    &__list {
+      overflow-x: auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+
+      li {
+        margin: 0 auto;
+        text-align: center;
+
+        a {
+          div {
+            margin: 0 auto;
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
 }
 
 
@@ -46,6 +70,8 @@
       gap: 15px;
     }
   }
+
+
 
 }
 
@@ -77,9 +103,10 @@
       row-gap: 20px;
     }
   }
-  .partners{
 
-    &__inner{
+  .partners {
+
+    &__inner {
       flex-wrap: wrap;
       justify-content: center;
     }
@@ -119,6 +146,29 @@
 
     &__buttons {}
   }
+
+  .news {
+
+    &__wrapper {
+      flex-direction: column-reverse;
+    }
+
+    &-page__img-box-mobile {
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    &-page__img-box {
+      display: none;
+    }
+
+    &__text {
+      max-width: 100%;
+    }
+
+
+  }
+
 
 }
 
@@ -279,7 +329,7 @@
     padding-bottom: 40px;
   }
 
-  .communication{
+  .communication {
     padding-bottom: 320px;
   }
 
@@ -409,7 +459,7 @@
       min-width: 100px;
       text-align: center;
       width: 100%;
-       text-align: center;
+      text-align: center;
     }
   }
 
@@ -512,8 +562,30 @@
 
   }
 
-  .partners{
+  .partners {
     padding: 40px 0;
+  }
+
+  .news{
+
+    ul {
+      li {
+        font-size: 16px;
+      }
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    &__big-title {
+      font-size: 20px;
+    }
+
+    &__title {
+      font-size: 18px;
+    }
+
   }
 
 }
@@ -625,15 +697,17 @@
     padding-top: 30px;
   }
 
-  .partners{
-    &__item-text{
+  .partners {
+    &__item-text {
       font-size: 18px;
     }
-    &__button__text{
+
+    &__button__text {
       font-size: 16px;
 
     }
-    &__link{
+
+    &__link {
       width: 100%;
       gap: 5px;
     }
@@ -676,6 +750,7 @@
       height: 420px;
     }
   }
+
 }
 
 
@@ -684,13 +759,22 @@
     max-width: 180px;
   }
 
-  .partners{
-    &__link{
+  .partners {
+    &__link {
       padding: 10px 8px;
     }
-    &__button__text{
+
+    &__button__text {
       font-size: 14px;
     }
+  }
+
+  .news__img-box {
+    width: 280px;
+  }
+
+  .stats-title-wrapper {
+    text-align: center !important;
   }
 
 }
