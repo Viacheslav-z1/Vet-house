@@ -333,6 +333,19 @@
     padding-bottom: 320px;
   }
 
+  .faq {
+
+    &__inner {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &-title-wrapper {
+      text-align: center;
+
+    }
+  }
+
 }
 
 
@@ -566,7 +579,7 @@
     padding: 40px 0;
   }
 
-  .news{
+  .news {
 
     ul {
       li {
@@ -712,6 +725,39 @@
       gap: 5px;
     }
   }
+
+  .faq {
+
+    &__text {
+      font-size: 16px;
+    }
+
+    &__item.active {
+
+      .faq__descr {
+        max-height: none;
+        padding: 20px;
+      }
+    }
+
+    &__descr {
+      font-size: 16px;
+    }
+
+    &__form-title{
+      font-size: 18px;
+    }
+    &__form-input__box-1{
+      max-width: 97%;
+    }
+    &__form-input__box-2{
+      max-width: 97%;
+    }
+    &__form-input{
+      max-width: 97%;
+    }
+
+  }
 }
 
 
@@ -775,6 +821,10 @@
 
   .stats-title-wrapper {
     text-align: center !important;
+  }
+
+  .faq{
+    padding-top: 20px;
   }
 
 }
