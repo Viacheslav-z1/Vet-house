@@ -43,6 +43,13 @@
       }
     }
   }
+
+  .services{
+
+    &-wrapper{
+      grid-template-columns: repeat(3,1fr);
+    }
+  }
 }
 
 
@@ -109,6 +116,16 @@
     &__inner {
       flex-wrap: wrap;
       justify-content: center;
+    }
+  }
+
+  .services{
+
+    &-wrapper{
+      grid-template-columns: repeat(2,1fr);
+    }
+    &-slide{
+      margin: 0 auto;
     }
   }
 }
@@ -477,6 +494,15 @@
   }
 
 
+  .services{
+
+    &-wrapper{
+      grid-template-columns: repeat(1,1fr);
+    }
+
+  }
+
+
 }
 
 @media(max-width:870px) {
@@ -757,6 +783,21 @@
       max-width: 97%;
     }
 
+  }
+}
+
+@media(max-width:450px) {
+
+  .services{
+
+    &-slide{
+      max-width: 100%;
+      width: 100%;
+    }
+
+    &__title{
+      margin-bottom: 0px;
+    }
   }
 }
 
