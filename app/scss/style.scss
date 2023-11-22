@@ -1311,7 +1311,7 @@
     &__button {}
 
     &__text-wrapper {
-        text-align-last: left;
+        text-align: left;
     }
 
     &__button__text {
@@ -1765,6 +1765,50 @@
     }
 }
 
+
+.reviews{
+    padding: 10px 0 40px 0;
+
+    &-page__item{
+        max-width: 420px;
+        margin-bottom: 30px;
+        break-inside: avoid;
+    }
+    &__button-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+    &__page-wrapper{
+        columns: 4;
+        column-gap: 30px;
+    }
+    &__add-review-btn{
+        background-color: #008BD2;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 20px;
+        border: none;
+        @extend %rubik-700;
+        font-size: 16px;
+        cursor: pointer;
+        width: 270px;
+        border-radius: 5px;
+    }
+    &__add-review-btn-box{
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            background-image: url('../images/icons/lag.svg');
+            width: 20px;
+            height: 20px;
+            left: 25px;
+            top: 20px;
+        }
+    }
+}
 
 
 @import 'media';
