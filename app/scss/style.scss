@@ -1811,4 +1811,54 @@
 }
 
 
+.owner{
+    .tabs-owner__text{
+     
+
+        h5{
+            font-size: 34px;
+            @extend %rubik-700;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+
+            &:nth-child(n+2){
+                margin-bottom: 30px;
+            }
+        }
+        p{
+            font-size: 20px;
+            @extend %roboto-400;
+            margin-bottom: 15px;
+        }
+        h3{
+            font-size: 24px;
+            @extend %rubik-700;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+        ul{
+            margin-bottom: 50px;
+            list-style: none;
+            padding: 0;
+            li{
+                padding-left: 30px;
+                position: relative;
+                font-size: 20px;
+                @extend %roboto-400;
+                margin-bottom: 15px;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 5px;
+                    background-image: url('../images/icons/double__arrows.svg');
+                    width: 20px;
+                    height: 20px;
+
+                }
+            }
+        }
+    }
+}
+
 @import 'media';
