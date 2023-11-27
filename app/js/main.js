@@ -1,6 +1,7 @@
 /**
   Menu logik
  */
+
 const menuBtn = document.querySelector('.menu__btn__open-js');
 const menu = document.querySelector('.header__menu-js');
 const menuBtn2 = document.querySelector('#menu__btn2');
@@ -39,9 +40,6 @@ function toggleImgClose(img1, img2) {
   img2.classList.add('none')
   img1.classList.remove('none')
 }
-
-
-
 
 
 

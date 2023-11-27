@@ -140,13 +140,6 @@ body::-webkit-scrollbar-thumb {
 
 
 
-
-
-
-
-
-
-
 @media (max-width:800px) {
 
     .subtitle{
@@ -171,4 +164,39 @@ body::-webkit-scrollbar-thumb {
     .help__category{
         padding: 10px 15px !important;
     }
+}
+
+
+
+/*hover btn border*/
+
+.border-bottom-hover-blue{
+    height: auto;
+    text-align: center;
+    margin-bottom: -3px;
+
+
+    &:after {
+        display      : block;
+        content      : '';
+        border-bottom: solid 3px #008BD2;
+        transform    : scaleX(0);
+        transition   : transform 300ms ease-in-out;
+        border-radius: 10px;
+    }
+
+    &:hover:after {
+        transform: scaleX(1);
+    }
+
+
+}
+
+
+.error{
+    border: 2px solid rgb(242, 9, 9) !important;
+}
+
+.succsess{
+    border: 2px solid #F0F3FA !important;
 }

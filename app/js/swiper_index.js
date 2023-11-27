@@ -58,3 +58,11 @@ const swiper = new Swiper('#swiper1', {
   
   
   
+import validator from "./formValidation.js";
+
+
+let inputs1 = document.querySelectorAll('.inputs-validation-js');
+let form1 = document.querySelector('.contact__form')
+
+
+validator(form1, inputs1);

@@ -60,46 +60,46 @@
           </a>
           <nav class="menu">
             <ul class="menu__list">
-              <li class="menu__item">
+              <li class="menu__item" >
                 <a href="" class="menu__link menu__btn__open-js">
                   <img src="./images/icons/menu-close.svg" class="menu__btn__open-img" alt="menu btn">
                   <img src="./images/icons/menu__close.svg" class="menu__btn__open-2" alt="menu btn">
                   <span>Меню</span>
                 </a>
               </li>
-              <li class="menu__item">
+              <li class="menu__item border-bottom-hover-blue">
                 <a href="./about__tabs.html" class="menu__link">
                   Про нас
                 </a>
               </li>
-              <li class="menu__item">
+              <li class="menu__item border-bottom-hover-blue">
                 <a href="./services.html" class="menu__link">
                   Послуги
                 </a>
               </li>
-              <li class="menu__item">
+              <li class="menu__item border-bottom-hover-blue">
                 <a href="./owner.html" class="menu__link">
                   Власнику
                 </a>
               </li>
-              <li class="menu__item">
+              <li class="menu__item border-bottom-hover-blue">
                 <a href="./partners.html" class="menu__link">
                   Партнерам
                 </a>
               </li>
-              <li class="menu__item">
+              <li class="menu__item border-bottom-hover-blue">
                 <a href="#" class="menu__link">
                   Програма донорства
                 </a>
               </li>
-              <li class="menu__item">
+              <li class="menu__item border-bottom-hover-blue">
                 <a href="./contacts.html" class="menu__link">
                   Контакти
                 </a>
               </li>
             </ul>
           </nav>
-          <div class="btn__wrapper">
+          <div class="btn__wrapper hover-btn">
             <a href="#" class="header__links-btn">
               Написати керівнику
             </a>
@@ -759,22 +759,22 @@
         <form class="contact__form">
           <div class="contact__form__inner">
             <div class="contact__column">
-              <div class="contact__name-box">
+              <div class="contact__name-box ">
                 <input type="text" placeholder="Ім’я клієнта"
-                  class="contact__input contact__inputs-style contact__name-input">
+                  class="contact__input contact__inputs-style contact__name-input inputs-validation-js ">
               </div>
 
               <div class="contact__select-box">
-                <select name="animal__type" class="contact__select contact__inputs-style">
-                  <option value="Улюбленець">Улюбленець</option>
+                <select name="animal__type" class="contact__select contact__inputs-style inputs-validation-js">
+                  <option value="default">Улюбленець</option>
                   <option value="Улюбленець1">Улюбленець1</option>
                   <option value="Улюбленець2">Улюбленець2</option>
                 </select>
               </div>
 
               <div class="contact__select-box">
-                <select name="date" class="contact__select contact__inputs-style">
-                  <option value="Дата прийому">Дата прийому</option>
+                <select name="date" class="contact__select contact__inputs-style inputs-validation-js">
+                  <option value="default">Дата прийому</option>
                   <option value="Понеділок">Понеділок</option>
                   <option value="Вівторок">Вівторок</option>
                   <option value="Середа">Середа</option>
@@ -787,13 +787,13 @@
             <div class="contact__column">
               <div class="contact__number-box">
                 <input type="number" placeholder="Номер телефона"
-                  class="contact__input contact__input-tel contact__inputs-style">
+                  class="contact__input contact__input-tel contact__inputs-style inputs-validation-js">
               </div>
 
 
               <div class="contact__select-box">
-                <select name="exemple" class="contact__select contact__inputs-style">
-                  <option value="Вид прийому">Вид прийому</option>
+                <select name="exemple" class="contact__select contact__inputs-style inputs-validation-js">
+                  <option value="default">Вид прийому</option>
                   <option value="1 Вид">1 Вид</option>
                   <option value="2 Вид">2 Вид</option>
                   <option value="3 Вид">3 Вид</option>
@@ -801,8 +801,8 @@
               </div>
 
               <div class="contact__select-box">
-                <select name="hourse" class="contact__select contact__inputs-style">
-                  <option value="Бажаний час прийому">Бажаний час прийому</option>
+                <select name="hourse" class="contact__select contact__inputs-style inputs-validation-js">
+                  <option value="default">Бажаний час прийому</option>
                   <option value="10:00">10:00</option>
                   <option value="11:00">11:00</option>
                   <option value="12:00">12:00</option>
@@ -818,7 +818,7 @@
             </div>
             <div class="contact__column">
               <div class="contact__textarea-box">
-                <textarea class="contact__textarea contact__inputs-style" placeholder="Опис проблеми"></textarea>
+                <textarea class="contact__textarea contact__inputs-style inputs-validation-js" placeholder="Опис проблеми"></textarea>
               </div>
 
             </div>
@@ -1187,7 +1187,7 @@
  
 
   <script src="js/main.min.js"></script>
-  <script src="js/swiper_index.js"></script>
+  <script type="module" src="js/swiper_index.js"></script>
 </body>
 
 </html>

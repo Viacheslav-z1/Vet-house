@@ -107,6 +107,7 @@
         left: 10px;
         background-color: #ffffff;
         padding: 70px 10px;
+        
         border-radius: 10px;
         z-index: 999px;
         transform: translateY(300%);
@@ -170,6 +171,9 @@
         @extend %rubik-700;
         font-size: 18px;
         display: none;
+        span{
+            color: #303030;
+        }
     }
 
     &__link {
@@ -1048,6 +1052,7 @@
     &__list-item {
 
         padding-left: 34px;
+        padding-right: 34px;
         margin-bottom: 15px;
         position: relative;
 
@@ -1860,5 +1865,20 @@
         }
     }
 }
+
+
+.gallery{
+
+    &__wrapper{
+        columns: 5;
+        column-gap: 10px;
+    }
+
+    &-1-wrapper{
+        columns: 3;
+        column-gap: 10px;
+    }
+}
+
 
 @import 'media';
