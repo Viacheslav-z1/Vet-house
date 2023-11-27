@@ -66,3 +66,13 @@ let form1 = document.querySelector('.contact__form')
 
 
 validator(form1, inputs1);
+
+
+
+/**phone mask */
+
+IMask(document.querySelector('#phone-input'), {
+  mask: '+{380}(00)000-00-00',
+  lazy: false,
+  placeholderChar: '_'
+});

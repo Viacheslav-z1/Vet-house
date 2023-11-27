@@ -67,3 +67,5 @@ function toggleImgClose(img1, img2) {
 
 
 
+
+
