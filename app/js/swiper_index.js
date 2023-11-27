@@ -4,13 +4,15 @@ const swiper = new Swiper('#swiper1', {
     // Optional parameters
     direction: 'horizontal',
     slidesPerView: 'auto',
+
+
     grid: {
       rows: 2,
     },
-    navigation: {
-      nextEl: null, // Отключение кнопки "Следующий слайд"
-      prevEl: null, // Отключение кнопки "Предыдущий слайд"
-    },
+    // navigation: {
+    //   nextEl: null, // Отключение кнопки "Следующий слайд"
+    //   prevEl: null, // Отключение кнопки "Предыдущий слайд"
+    // },
     spaceBetween: 30,
   
     breakpoints: {
@@ -39,8 +41,6 @@ const swiper = new Swiper('#swiper1', {
     spaceBetween: 10,
     nextEl: '.swiper-button-next', // Селектор для кнопки "Следующий слайд"
     prevEl: '.swiper-button-prev', // Селектор для кнопки "Предыдущий слайд"
-  
-  
   
   });
   
