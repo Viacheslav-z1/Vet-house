@@ -54,11 +54,17 @@ function validator(form, inputs) {
             console.log('data send');
             let formData = new FormData(form);
             let data = {};
+            let massage = '';
             for (const [key, value] of formData) {
                 data[key] = value;
+                massage += `${key} : ${value}\n`
             }
             JSON.stringify(data);
             console.log(data);
+
+            alert(`Заявку відправлено!! \n ${massage}`);
+
+            form.reset();
         }
     })
 
