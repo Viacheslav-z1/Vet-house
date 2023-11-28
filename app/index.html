@@ -88,7 +88,7 @@
                 </a>
               </li>
               <li class="menu__item border-bottom-hover-blue">
-                <a href="#" class="menu__link">
+                <a href="#program" class="menu__link">
                   Програма донорства
                 </a>
               </li>
@@ -100,7 +100,7 @@
             </ul>
           </nav>
           <div class="btn__wrapper hover-btn">
-            <a href="#" class="header__links-btn">
+            <a href="#contact" class="header__links-btn">
               Написати керівнику
             </a>
           </div>
@@ -174,7 +174,7 @@
                 </a>
               </li>
               <li class="footer__list-item header__item-line-blue">
-                <a href="#" class="footer__list-item-link header__dark-mode">
+                <a href="#program" class="footer__list-item-link header__dark-mode">
                   Програма донорства
                 </a>
               </li>
@@ -297,7 +297,7 @@
               лікувальні, гігієнічні та діагностичні маніпуляції різного роду.
             </p>
             <div class="top__btn-wrapper">
-              <a href="#" class="top__btn">
+              <a href="#contact" class="top__btn">
                 <img src="./images/icons/lag.svg" alt="img" class="top__btn-img">
                 <p class="top__btn-text">Записатись на прийом</p>
               </a>
@@ -481,7 +481,7 @@
             Чому обирають нас?
           </h2>
         </div>
-        <ul class="why__list">
+        <ul id="program" class="why__list">
           <li class="why__item">
             <img src="./images/why__section/heard.svg" alt="image" class="why__item-img">
             <h5 class="why__item-title">
@@ -726,7 +726,7 @@
                 </div>
               </div>
 
-              <div class="swiper-slide swiper-slide-reviews">
+              <div  class="swiper-slide swiper-slide-reviews">
                 <div class="reviews__container">
                   <p class="reviews__text">
                     Такса Ніка... Дякуючи персоналу клініки моє маленьке чудо не просто ходить і не просто бігає. Вона
@@ -746,7 +746,7 @@
       </div>
     </section>
 
-    <section class="contact">
+    <section id="contact" class="contact">
       <div class="container contact-container">
         <div class="contact-title-wrapper subtitle-wrapper">
           <h4 class="contact-subtitle subtitle">
@@ -756,16 +756,16 @@
             Записатись на прийом
           </h2>
         </div>
-        <form class="contact__form">
+        <form  class="contact__form">
           <div class="contact__form__inner">
             <div class="contact__column">
               <div class="contact__name-box ">
-                <input type="text" placeholder="Ім’я клієнта"
+                <input name="name" type="text" placeholder="Ім’я клієнта"
                   class="contact__input contact__inputs-style contact__name-input inputs-validation-js ">
               </div>
 
               <div class="contact__select-box">
-                <select name="animal__type" class="contact__select contact__inputs-style inputs-validation-js">
+                <select name="animal" name="animal__type" class="contact__select contact__inputs-style inputs-validation-js">
                   <option value="default">Улюбленець</option>
                   <option value="Улюбленець1">Улюбленець1</option>
                   <option value="Улюбленець2">Улюбленець2</option>
@@ -773,7 +773,7 @@
               </div>
 
               <div class="contact__select-box">
-                <select name="date" class="contact__select contact__inputs-style inputs-validation-js">
+                <select name="day" name="date" class="contact__select contact__inputs-style inputs-validation-js">
                   <option value="default">Дата прийому</option>
                   <option value="Понеділок">Понеділок</option>
                   <option value="Вівторок">Вівторок</option>
@@ -786,13 +786,13 @@
             </div>
             <div class="contact__column">
               <div class="contact__number-box">
-                <input type="text" id="phone-input" placeholder="Номер телефона"
+                <input name="phone" type="text" value="default" id="phone-input" placeholder="Номер телефона"
                   class="contact__input contact__input-tel contact__inputs-style inputs-validation-js">
               </div>
 
 
               <div class="contact__select-box">
-                <select name="exemple" class="contact__select contact__inputs-style inputs-validation-js">
+                <select  name="example" class="contact__select contact__inputs-style inputs-validation-js">
                   <option value="default">Вид прийому</option>
                   <option value="1 Вид">1 Вид</option>
                   <option value="2 Вид">2 Вид</option>
@@ -1063,7 +1063,7 @@
               </a>
             </li>
             <li class="footer__list-item">
-              <a href="#" class="footer__list-item-link">
+              <a href="#program" class="footer__list-item-link">
                 Програма донорства
               </a>
             </li>
